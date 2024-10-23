@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manual de Uso - Calendario SGVH</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        /* Colores característicos del SENA */
+        :root {
+            --sena-green: #008037;
+            --sena-white: #ffffff;
+            --sena-dark-grey: #333333;
+        }
+
+        body {
+            background-color: #f8f9fa;
+            font-family: Arial, sans-serif;
+        }
+
+        .hero {
+            background-color: var(--sena-green);
+            color: var(--sena-white);
+            padding: 50px 0;
+        }
+
+        .section {
+            padding: 40px 0;
+        }
+
+        .bg-light {
+            background-color: var(--sena-white) !important;
+        }
+
+        .list-group-item {
+            background-color: var(--sena-white);
+            border-color: var(--sena-green);
+        }
+
+        h2, h4 {
+            color: var(--sena-green);
+        }
+
+        p, li {
+            color: var(--sena-dark-grey);
+        }
+
+        .footer {
+            background-color: var(--sena-dark-grey);
+            color: var(--sena-white);
+            padding: 20px 0;
+            text-align: center;
+        }
+
+        .accordion-button {
+            background-color: var(--sena-white);
+            color: var(--sena-dark-grey);
+            border-color: var(--sena-green);
+        }
+
+        .accordion-button:hover {
+            background-color: var(--sena-green);
+            color: var(--sena-white);
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Encabezado -->
+    <header class="hero text-center">
+        <h1>Manual de Uso - Calendario en SGVH</h1>
+        <p>Aprende a gestionar horarios, asignar recursos y consultar calendarios de manera eficiente.</p>
+    </header>
+
+    <!-- Sección de Introducción -->
+    <section class="section container">
+        <h2>¿Qué es el Calendario en SGVH?</h2>
+        <p>El calendario del Sistema de Gestión Virtual de Horarios (SGVH) es una herramienta que te permite crear, editar, visualizar y organizar los horarios de instructores, ambientes y programas de formación. Con una interfaz amigable, el calendario facilita la planificación y el control de los recursos académicos del centro.</p>
+        <p>Esta herramienta está diseñada para ofrecer una visualización clara de los eventos programados y permite gestionar los horarios de manera dinámica, asegurando que los recursos estén correctamente asignados y sin conflictos.</p>
+    </section>
+
+    <!-- Guía Paso a Paso -->
+    <section class="section bg-light container">
+        <h2>Guía Paso a Paso para Utilizar el Calendario</h2>
+
+        <h4>1. Consultar el Calendario</h4>
+        <p>Accede a la sección "Calendario" desde el panel administrativo. Aquí encontrarás una vista general de todos los horarios programados, organizados por instructores, ambientes o programas de formación. Puedes navegar entre las semanas o meses utilizando los botones de navegación en la parte superior del calendario.</p>
+
+        <h4>2. Crear un Nuevo Evento</h4>
+        <p>Para crear un nuevo horario, selecciona el día y la hora en el calendario donde deseas programar el evento. Aparecerá una ventana emergente que te permitirá introducir los detalles del evento:</p>
+        <ul class="list-group">
+            <li class="list-group-item">Selecciona el instructor asignado.</li>
+            <li class="list-group-item">Elige el ambiente o salón donde se realizará la clase.</li>
+            <li class="list-group-item">Especifica el programa de formación o la competencia que se impartirá.</li>
+            <li class="list-group-item">Indica la duración del evento (hora de inicio y fin).</li>
+        </ul>
+        <p>Una vez completados los campos, haz clic en "Guardar" para crear el evento. El calendario se actualizará automáticamente.</p>
+
+        <h4>3. Editar un Evento Existente</h4>
+        <p>Para editar un evento, selecciona el horario que deseas modificar en el calendario. Aparecerá una ventana emergente con los detalles del evento. Podrás modificar cualquier campo (instructor, ambiente, programa) y luego hacer clic en "Guardar" para actualizar el evento.</p>
+
+        <h4>4. Eliminar un Evento</h4>
+        <p>Si deseas eliminar un evento, selecciona el evento en el calendario y haz clic en el botón "Eliminar". Aparecerá un mensaje de confirmación para asegurarte de que deseas eliminar el horario. Al confirmar, el evento se eliminará del calendario.</p>
+
+        <h4>5. Asignar Recursos</h4>
+        <p>Al crear o editar un horario, puedes asignar los siguientes recursos:</p>
+        <ul class="list-group">
+            <li class="list-group-item">**Instructor**: Elige el instructor que estará a cargo de la clase o formación.</li>
+            <li class="list-group-item">**Ambiente**: Asigna el salón o laboratorio donde se impartirá la clase.</li>
+            <li class="list-group-item">**Programa de Formación**: Selecciona el programa o competencia que se dictará en ese horario.</li>
+        </ul>
+    </section>
+
+    <!-- Preguntas Frecuentes (FAQ) -->
+    <section class="section container">
+        <h2>Preguntas Frecuentes</h2>
+        <div class="accordion" id="faqAccordion">
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingOne">
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne">
+                        ¿Cómo puedo consultar los horarios de diferentes instructores?
+                    </button>
+                </h2>
+                <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#faqAccordion">
+                    <div class="accordion-body">
+                        En la parte superior del calendario, encontrarás un menú desplegable donde puedes seleccionar los diferentes instructores o ambientes para visualizar sus horarios específicos.
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingTwo">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo">
+                        ¿Qué pasa si intento programar dos eventos al mismo tiempo en el mismo ambiente?
+                    </button>
+                </h2>
+                <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                    <div class="accordion-body">
+                        El sistema no permitirá programar dos eventos en el mismo horario y ambiente. Recibirás un mensaje de error indicando que hay un conflicto de horarios.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>© 2024 Servicio Nacional de Aprendizaje (SENA) - Todos los derechos reservados. | <a href="mailto:soporte@sghv.com">Soporte Técnico</a></p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

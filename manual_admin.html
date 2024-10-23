@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manual de Uso - SGVH</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        /* Colores característicos del SENA */
+        :root {
+            --sena-green: #008037;
+            --sena-white: #ffffff;
+            --sena-dark-grey: #333333;
+        }
+        
+        body {
+            background-color: #f8f9fa;
+            font-family: Arial, sans-serif;
+        }
+
+        .hero {
+            background-color: var(--sena-green);
+            color: var(--sena-white);
+            padding: 50px 0;
+        }
+
+        .section {
+            padding: 40px 0;
+        }
+
+        .bg-light {
+            background-color: var(--sena-white) !important;
+        }
+
+        .list-group-item {
+            background-color: var(--sena-white);
+            border-color: var(--sena-green);
+        }
+
+        .list-group-item:hover {
+            background-color: #f0f0f0;
+        }
+
+        h2, h4 {
+            color: var(--sena-green);
+        }
+
+        p, li {
+            color: var(--sena-dark-grey);
+        }
+
+        .footer {
+            background-color: var(--sena-dark-grey);
+            color: var(--sena-white);
+            padding: 20px 0;
+            text-align: center;
+        }
+
+        .accordion-button {
+            background-color: var(--sena-white);
+            color: var(--sena-dark-grey);
+            border-color: var(--sena-green);
+        }
+
+        .accordion-button:hover {
+            background-color: var(--sena-green);
+            color: var(--sena-white);
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Encabezado -->
+    <header class="hero text-center">
+        <h1>Manual de Uso - Panel Administrativo SGVH</h1>
+        <p>Descubre cómo utilizar el Sistema de Gestión Virtual de Horarios para planificar y gestionar horarios de manera eficiente.</p>
+    </header>
+
+    <!-- Sección de Introducción -->
+    <section class="section container">
+        <h2>¿Qué es el SGVH?</h2>
+        <p>El Sistema de Gestión Virtual de Horarios (SGVH) es una plataforma diseñada para facilitar la planificación y gestión de horarios en el Centro Agroempresarial y Desarrollo Pecuario del Huila. A través de esta plataforma, los administradores pueden crear, editar y organizar los horarios de instructores, ambientes y programas de formación de forma eficiente y centralizada.</p>
+        <p>El SGVH permite ahorrar tiempo, evitar errores y garantizar que la información de los horarios sea clara y accesible tanto para los aprendices como para los instructores. Con este sistema, los usuarios anónimos podrán consultar sus horarios, mientras que los administradores tendrán acceso completo para gestionar los horarios de manera segura.</p>
+    </section>
+
+    <!-- Características del Panel -->
+    <section class="section bg-light container">
+        <h2>Características del Panel Administrativo</h2>
+        <ul class="list-group">
+            <li class="list-group-item">Creación, edición y eliminación de horarios.</li>
+            <li class="list-group-item">Asignación de recursos: instructores, ambientes y programas de formación.</li>
+            <li class="list-group-item">Gestión de usuarios: Crear y eliminar administradores temporales.</li>
+            <li class="list-group-item">Consulta de horarios actualizados por parte de aprendices e instructores.</li>
+            <li class="list-group-item">Carga masiva de horarios a través de archivos.</li>
+            <li class="list-group-item">Seguridad en el acceso mediante autenticación de usuarios (login).</li>
+        </ul>
+    </section>
+
+    <!-- Guía paso a paso -->
+    <section class="section container">
+        <h2>Guía paso a paso</h2>
+        <p>A continuación se detalla cómo usar las funciones clave del panel administrativo del SGVH para gestionar los horarios.</p>
+        <h4>1. Iniciar Sesión</h4>
+        <p>Para acceder al panel administrativo, primero deberás iniciar sesión con tu usuario y contraseña asignados. Solo los administradores y administradores temporales tienen permisos para modificar los horarios y gestionar el sistema.</p>
+
+        <h4>2. Crear y Editar Horarios</h4>
+        <p>Una vez dentro del panel, accede a la sección de "Horarios". Aquí podrás ver una vista de calendario donde se muestran los horarios actuales. Para crear un nuevo horario, selecciona la fecha y elige los recursos (instructor, ambiente, programa de formación). Haz clic en "Guardar" para registrar los cambios.</p>
+
+        <h4>3. Asignar Recursos</h4>
+        <p>En el proceso de creación o edición de un horario, tendrás la opción de asignar recursos. Puedes seleccionar qué instructor estará a cargo, qué ambiente se utilizará, y qué programa de formación se impartirá en ese horario.</p>
+
+        <h4>4. Gestión de Administradores Temporales</h4>
+        <p>Desde la sección de "Usuarios", los administradores pueden crear y eliminar administradores temporales. Esto permite delegar parte de la gestión de los horarios a otros miembros del equipo sin otorgarles acceso completo al sistema.</p>
+    </section>
+
+    <!-- Preguntas Frecuentes (FAQ) -->
+    <section class="section bg-light container">
+        <h2>Preguntas Frecuentes</h2>
+        <div class="accordion" id="faqAccordion">
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingOne">
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne">
+                        ¿Cómo recuperar mi contraseña?
+                    </button>
+                </h2>
+                <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#faqAccordion">
+                    <div class="accordion-body">
+                        Si olvidas tu contraseña, puedes hacer clic en "Olvidaste tu contraseña" en la pantalla de inicio de sesión. Recibirás un correo con un enlace para restablecerla.
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingTwo">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo">
+                        ¿Cómo puedo ver los horarios sin ser administrador?
+                    </button>
+                </h2>
+                <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                    <div class="accordion-body">
+                        Cualquier usuario anónimo puede consultar los horarios. Solo es necesario acceder a la opción "Ver horarios" en la pantalla principal, sin necesidad de iniciar sesión.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>© 2024 Servicio Nacional de Aprendizaje (SENA) - Todos los derechos reservados. | <a href="mailto:soporte@sghv.com">Soporte Técnico</a></p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
